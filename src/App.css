@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -27,6 +28,48 @@
 .App-link {
   color: #61dafb;
 }
+
+.clearfix {
+  overflow: auto;
+}
+
+.leftBox{
+  width: 60%;
+  float: left;
+  display: block;
+}
+
+.rightBox{
+  width: 40%;
+  float: right;
+  display: block;
+  text-align: center;
+}
+
+.inputBox{
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 60%;
+  margin-right: 15px;
+}
+
+.content{
+  margin-top: 50px;
+}
+
+.rightBox p{
+  display: contents;
+  font-size: 30px;
+  text-align: center;
+}
+.rightBox p:hover{
+  cursor: pointer;
+}
+
+.deleteImage:hover{
+  cursor: pointer;
+} 
 
 @keyframes App-logo-spin {
   from {
