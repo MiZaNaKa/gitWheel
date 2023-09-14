@@ -56,6 +56,7 @@
 
 .content{
   margin-top: 50px;
+  padding: 10px;
 }
 
 .rightBox p{
@@ -70,6 +71,27 @@
 .deleteImage:hover{
   cursor: pointer;
 } 
+
+@media only screen and (max-width: 900px) {
+  .leftBox{
+    width: 100%;
+    display: block
+  }
+  
+  .rightBox{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  #canvas{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+}
 
 @keyframes App-logo-spin {
   from {

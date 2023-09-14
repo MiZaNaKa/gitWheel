@@ -121,23 +121,6 @@ const App = () => {
   }
   return (
     <div className='content clearfix'>
-      <div className='leftBox'>
-        <WheelComponent
-          segments={sessionStorage.getItem('items') ? JSON.parse(sessionStorage.getItem('items')) :[]}
-          segColors={sessionStorage.getItem('color') ? JSON.parse(sessionStorage.getItem('color')) :[]}
-          winningSegment={userInfo}
-          onFinished={(winner) => onFinished(winner)}
-          primaryColor='black'
-          contrastColor='white'
-          buttonText='Spin'
-          isOnlyOnce={false}
-          size={290}
-          upDuration={90}
-          downDuration={350}
-          fontFamily='Arial'
-        />
-      </div>
-
       <div className='rightBox'>
         <div style={{marginBottom:50}}>
           <h4>Created by khinlay.merryshall@gmail.com</h4>
@@ -163,6 +146,24 @@ const App = () => {
         
 
       </div>
+      <div className='leftBox'>
+        <WheelComponent
+          segments={sessionStorage.getItem('items') ? JSON.parse(sessionStorage.getItem('items')) :[]}
+          segColors={sessionStorage.getItem('color') ? JSON.parse(sessionStorage.getItem('color')) :[]}
+          winningSegment={userInfo}
+          onFinished={(winner) => onFinished(winner)}
+          primaryColor='black'
+          contrastColor='white'
+          buttonText='Spin'
+          isOnlyOnce={false}
+          size={270}
+          upDuration={290}
+          downDuration={350}
+          fontFamily='Arial'
+        />
+      </div>
+
+      
 
     </div>
     
