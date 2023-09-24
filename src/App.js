@@ -69,8 +69,8 @@ const App = () => {
   }
 
   const onFinished = (winner) => {
-    alert(userInfo)
-    // alert("winner is " +winner)
+   
+    alert("winner is " +winner)
     setUserInfo(winner)
 
     var value =generateNewColor()
